@@ -1,0 +1,55 @@
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    transition: .3s;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-decoration: none;
+    padding: 0 28px;
+    height: 35px;
+    transition: .3s;
+    border-radius: 40px 0;
+    background: #3cbe9b;
+    @include appearance(none);
+    border: none;
+    box-shadow: none;
+
+
+    &.bordered {
+        border: 1px solid #000;
+        background: none;
+
+        &.red {
+            border-color: #be3c5f;
+
+            &:hover {
+                background: #be3c5f;
+            }
+        }
+
+        &.green {
+            border-color: #3cbe9b;
+
+            &:hover {
+                background-color: #3cbe9b;
+                color: #fff;
+            }
+        }
+    }
+}
+
+.BIGbtn {
+    @extend .btn;
+    font-size: 20px;
+    height: 70px;
+    border-radius: 100px 0;
+    font-weight: 300;
+    padding:0 65px;
+
+    &:hover {
+        background-color: #fff;
+        color: #000;
+    }
+}

@@ -1,0 +1,66 @@
+.stickyShow {
+    display: none;
+}
+
+.sticky {
+    .stickyHide {
+        display: none;
+    }
+    .stickyShow {
+        display: block;
+    }
+}
+
+
+.text-danger {
+    color: #be3c5f !important;
+}
+
+
+[class^="__menu"], [class*="__menu"]{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    align-items: center;
+    flex-direction: row;
+    display: flex;
+    justify-content: flex-end;
+
+    a {
+        text-decoration: none;
+    }
+}
+
+a[class^="icon-"], a[class*="icon-"]{
+    text-decoration: none;
+}
+
+
+
+.icon-checkmark {
+    color: #3dbe9b;
+}
+
+
+// flex
+.column {
+    align-self: center;
+
+    &.third {
+        @include calc(width, '100%/3');
+    }
+
+    .floatWidth {
+        flex-shrink: 5;
+    }
+}
+
+.flexRow {
+    display: flex;
+    flex-direction: row;
+
+    > .column {
+        flex-shrink: 0;
+        padding:0 15px;
+    }
+}

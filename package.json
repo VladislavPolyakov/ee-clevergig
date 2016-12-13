@@ -1,0 +1,59 @@
+{
+  "name": "lobster",
+  "version": "1.0.0",
+  "description": "lobster Ink site",
+  "main": "index.js",
+  "dependencies": {
+    "bourbon": "^4.2.7",
+    "owl.carousel": "^2.1.4",
+    "reset-css": "^2.2.0"
+  },
+  "devDependencies": {
+    "backstopjs": "^2.0.2",
+    "breakpoint-sass": "^2.7.0",
+    "browser-sync": "^2.12.3",
+    "bs-html-injector": "^3.0.1",
+    "casperjs": "^1.1.3",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-cache": "^0.4.4",
+    "gulp-chug": "^0.5.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-css-globbing": "^0.1.8",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-file-include": "^0.14.0",
+    "gulp-if": "^2.0.1",
+    "gulp-imagemin": "^2.4.0",
+    "gulp-notify": "^2.2.0",
+    "gulp-nunjucks-html": "^2.0.0",
+    "gulp-nunjucks-render": "^2.0.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-rename": "^1.2.2",
+    "gulp-replace": "^0.5.4",
+    "gulp-sass": "^2.2.0",
+    "gulp-size": "^2.1.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-uglify": "^1.5.4",
+    "gulp-util": "^3.0.7",
+    "imagesloaded": "^4.1.0",
+    "isotope-layout": "^3.0.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LobsterInk/lobster-corporate.git"
+  },
+  "keywords": [
+    "lobster"
+  ],
+  "author": "brain-agency",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LobsterInk/lobster-corporate/issues"
+  },
+  "homepage": "https://github.com/LobsterInk/lobster-corporate#readme"
+}

@@ -1,0 +1,40 @@
+{
+  "id": "Lobster",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 1500
+    },
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 667
+    }
+  ],
+  "scenarios": [
+    {
+      "label": "blog",
+      "url": "http://localhost:3000/blog.html",
+      "hideSelectors": [],
+      "removeSelectors": [],
+      "selectors": [
+        "document"
+      ],
+      "readyEvent": "page_loaded",
+      "delay": 1000,
+      "misMatchThreshold" : 0.5
+    }
+  ],
+  "paths": {
+    "bitmaps_reference": "backstop_data/bitmaps_reference",
+    "bitmaps_test": "backstop_data/bitmaps_test",
+    "casper_scripts": "backstop_data/casper_scripts",
+    "html_report": "backstop_data/html_report",
+    "ci_report": "backstop_data/ci_report"
+  },
+  "casperFlags": [],
+  "engine": "phantomjs",
+  "report": ["browser"],
+  "debug": false
+}

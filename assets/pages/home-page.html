@@ -1,0 +1,369 @@
+	<!-- TOP  -->
+	{% include "common/top.html" %}
+	<!-- TOP END-->
+
+	<div class="wrapper">
+
+	    <!-- Overlay Navigation Menu -->
+	    <div class="mobileNav" >
+
+	        <a href="#" class="mobileNav__close">
+	            <span class="icon-cancel"></span>
+	        </a>
+
+	        <ul class="mobileNav__menu">
+	            <li>
+	                <a href="http://blog.clevergig.nl" target="_blank" class="no-page-fade">Blog</a>
+	            </li>
+	            <li>
+	                <a href="https://clevergigdemo.youcanbook.me/" target="_blank">Vraag demo aan</a>
+	            </li>
+	            <li>
+	                <a href="{!! route('page.login') !!}" class="leaf_btn empty">Inloggen</a>
+	            </li>
+	        </ul>
+
+	        <div class="mobileNav__copy">
+	            <p class="copyright">clevergig 2016 All rights reserved.</p>
+	        </div>
+
+	    </div>
+	    <!-- Overlay Navigation Menu End -->
+
+	    <!-- Header -->
+	    <header class="header">
+
+	        <div class="notificationBar">
+	            <span class="notificationBar__text">Ben je werknemer en gebruik je de app?</span>
+	            <a href="#" class="btn bordered red"><span>Lees meer</span></a>
+	            <a href="#" class="notificationBar__close" ></a>
+	        </div>
+
+	        <div class="topSection">
+
+	            <div class="topSection__logo">
+	                <a href="/" >
+	                    <img class="white_logo stickyHide" src="img/homepage/logo.svg" alt="Sartre Logo" />
+	                    <img class="green_logo stickyShow" src="img/homepage/logo-dark.svg" alt="Sartre Logo" />
+	                </a>
+	            </div>
+
+	            <ul class="topSection__menu">
+	                <li>
+	                    <a href="http://blog.clevergig.nl" target="_blank" class="no-page-fade">Blog</a>
+	                </li>
+	                <li>
+	                    <a href="https://clevergigdemo.youcanbook.me/" target="_blank">Vraag demo aan</a>
+	                </li>
+	                <li>
+	                    <a href="#" class="btn bordered green"><span>Inloggen</span></a>
+	                </li>
+	            </ul>
+
+	            <div class="mobileMenuIcon">
+	                <a href="#" class="navigation-show overlay-nav-show nav-icon">
+	                    <span class="icon-menu"></span>
+	                </a>
+	            </div>
+
+	        </div>
+	    </header>
+	    <!-- Header End -->
+
+	    <section class="keyvisual">
+	        <div class="keyvisual__content">
+	            <h1 class="keyvisual__header">Dé optimalisatietool voor uw flexpool</h1>
+	            <h2 class="keyvisual__subHeader">
+	                Werkt u met een grote pool van flexmedewerkers? <br class="mobile_hide">Kost het u veel tijd en moeite om de juiste mensen op de juiste plek te hebben? <br class="mobile_hide">En om deze groep efficiënt te managen? Maak kennis met clevergig.
+	            </h2>
+	            <div class="second_anim">
+	                <a @click.prevent="scrollToSignupForm" href="#" class="BIGbtn hero_btn"><span>Demo aanvragen</span></a>
+	            </div>
+	        </div>
+	        <div class="keyvisual__videoWrapper">
+	            <video autoplay="autoplay" loop="loop" muted="muted" class="keyvisual__video" id="bgvideo" src="video/homepage.mp4"></video>
+	        </div>
+
+	        <a href="#wanneer_step" class="keyvisual__scrollTo icon-arrow"></a>
+	    </section>
+
+
+	    <!-- Content -->
+	    <div class="mainContent">
+
+	        <!-- Fullscreen Slider Section -->
+
+	        <!-- Feature Section 1 -->
+	        <section class="sliderSection" id="wanneer_step">
+	            <div class="feature-slider" v-el:wrapper>
+	                <ul class="slides" v-el:slides>
+	                    <li class="slide clearfix" >
+	                        <div class="slide__wrapper">
+	                            <div class="slide__info">
+	                                <div class="slide__content">
+	                                    <h2 class="slide__header">Het probleem</h2>
+	                                    <span class="slide__text">
+	                                        Veel retailers, horecabedrijven en logistieke dienstverleners hebben moeite met de 'last mile' van personeelsplanning: het invullen van dringende diensten. Afmeldingen, ziekteverzuim en een tekort aan personeel leggen grote druk op de manager en loonkosten.
+	                                    </span>
+	                                </div>
+	                            </div>
+	                            <div class="slide__img"><img src="img/homepage/section1_slide1.jpg" alt=""/></div>
+	                        </div>
+	                    </li>
+	                    <li class="slide clearfix" >
+	                        <div class="slide__wrapper">
+	                            <div class="slide__info">
+	                                <div class="slide__content">
+	                                    <h2 class="slide__header">Tijd- en omzetverlies</h2>
+	                                    <span class="slide__text">
+	                                        Veel tijd gaat onnodig verlopen in het last minute oproepen van medewerkers. En het niet invullen van diensten vergroot wachttijden en verslechtert de servicebeleving bij de klant. Met omzetverlies als gevolg.
+	                                    </span>
+	                                </div>
+	                            </div>
+	                            <div class="slide__img"><img src="img/homepage/section1_slide2.jpg" alt=""/></div>
+	                        </div>
+	                    </li>
+	                    <li class="slide clearfix" >
+	                        <div class="slide__wrapper">
+	                            <div class="slide__info">
+	                                <div class="slide__content">
+	                                    <h2 class="slide__header">Suboptimale bezetting</h2>
+	                                    <span class="slide__text">
+	                                        Heeft u meerdere vestigingen in een klein geografisch gebied? Maar heeft elke vestiging nog zijn eigen team? Dat kan ongetwijfeld efficiënter.
+	                                    </span>
+	                                </div>
+	                            </div>
+	                            <div class="slide__img"><img src="img/homepage/section1_slide3.jpg" alt=""/></div>
+	                        </div>
+	                    </li>
+	                </ul>
+	            </div>
+	        </section>
+	        <!-- Feature Section 1 -->
+
+	        <!-- Feature Section 2 -->
+	        <section class="sliderSection">
+	            <div class="feature-slider images_left" v-el:wrapper>
+	                <ul class="slides" v-el:slides>
+	                    <li class="slide clearfix">
+	                        <div class="slide__wrapper">
+	                            <div class="slide__img"><img class="" src="img/homepage/section2_slide1.jpg" alt=""/></div>
+	                            <div class="slide__info">
+	                                <div class="slide__content">
+	                                    <h2 class="slide__header">Uw eigen flexpool</h2>
+	                                    <span class="slide__text">
+	                                        Nodig uw medewerkers uit en creëer een eigen flexpool binnen de clevergig app. Bepaal zelf welke rollen en vaardigheden van belang zijn.
+	                                    </span>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                    <li class="slide clearfix">
+	                        <div class="slide__wrapper">
+	                            <div class="slide__img"><img class="" src="img/homepage/section2_slide2.jpg" alt=""/></div>
+	                            <div class="slide__info">
+	                                <div class="slide__content">
+	                                    <h2 class="slide__header">Plaats een oproep</h2>
+	                                    <span class="slide__text">
+	                                        Plaats snel en gemakkelijk een oproep binnen uw pool. De clevergig smartphone app doet zijn werk. Een medewerker accepteert binnen no-time de openstaande dienst.
+	                                    </span>
+	                                </div>
+	                            </div>
+	                        </div>
+	                    </li>
+	                </ul>
+	            </div>
+	            </slider>
+	        </section>
+	        <!-- Feature Section 2 -->
+
+	        <!-- Feature Section 3 -->
+	        <section class="sliderSection" id="wanneer_step">
+	            <slider :waypoint="true" inline-template>
+	            <div class="feature-slider" v-el:wrapper>
+	                <ul class="slides" v-el:slides>
+	                    <li class="slide clearfix" >
+	                        <div class="slide__wrapper">
+	                            <div class="slide__info">
+	                                <div class="slide__content">
+	                                    <h2 class="slide__header">Verkrijg inzicht</h2>
+	                                    <span class="slide__text">
+	                                        Welke diensten zijn het moelijkst om te vullen? En wanneer vallen de meeste gaten? Welke medewerkers zijn het snelst met het accepteren van diensten? Gebruik deze inzichten om uw planning en werving van medewerkers te optimaliseren.
+	                                    </span>
+	                                </div>
+	                            </div>
+	                            <div class="slide__img"><img src="img/homepage/section3_slide1.jpg" alt=""/></div>
+	                        </div>
+	                    </li>
+	                    <li class="slide clearfix" >
+	                        <div class="slide__wrapper">
+	                            <div class="slide__info">
+	                                <div class="slide__content">
+	                                    <h2 class="slide__header">Voorspellingen op maat</h2>
+	                                    <span class="slide__text">
+	                                        Onze voorspellende modellen en slimme algoritmes helpen om de gehele personele situatie te optimaliseren. We koppelen gegevens uit uw flexpool aan externe gegevens, zoals het weer, feestdagen en evenementen. Zodat u nooit voor verrassingen komt te staan.
+	                                    </span>
+	                                </div>
+	                            </div>
+	                            <div class="slide__img"><img src="img/homepage/section3_slide2.jpg" alt=""/></div>
+	                        </div>
+	                    </li>
+	                    <li class="slide clearfix" >
+	                        <div class="slide__wrapper">
+	                            <div class="slide__info">
+	                                <div class="slide__content">
+	                                    <h2 class="slide__header">Naadloze integratie</h2>
+	                                    <span class="slide__text">
+	                                        Waarschijnlijk gebruikt u al software voor uw urenregistratie, payroll en loonheffingen. clevergig integreert naadloos met bekende en minder bekende softwarepakketten.
+	                                    </span>
+	                                </div>
+	                            </div>
+	                            <div class="slide__img"><img src="img/homepage/section3_slide3.jpg" alt=""/></div>
+	                        </div>
+	                    </li>
+	                </ul>
+	            </div>
+	        </section>
+	        <!-- Feature Section 3 -->
+
+	        <!-- Plans Section 4 -->
+	        <div class="plansSection">
+	            <div class="plansSection__container">
+	                <div class="plansSection__title">Tarieven per maand</div>
+	                <div class="plansSection__slogan">Ideal for Starters</div>
+	                <div class="plansSection__list">
+	                    <div class="planBlock">
+	                        <div class="planBlock__title">Essentials</div>
+	                        <div class="planBlock__price">
+	                            <div class="priceLine">
+	                                <div class="priceLine__currency">&euro;</div>
+	                                <div class="priceLine__value">199</div>
+	                                <div class="priceLine__per">per vestiging</div>
+	                            </div>
+	                        </div>
+	                        <ul class="planBlock__features">
+	                            <li><i class="icon-checkmark"></i>Maak je eigen pool aan</li>
+	                            <li><i class="icon-checkmark"></i>Tot 25 medewerkers</li>
+	                            <li><i class="icon-checkmark"></i>Bepaal rollen en vaardigheden</li>
+	                            <li><i class="icon-checkmark"></i>Creëer gigs</li>
+	                            <li><i class="icon-checkmark"></i>iOS & Android app voor medewerkers</li>
+	                            <li><i class="icon-checkmark"></i>Basisrapportage</li>
+	                        </ul>
+	                        <a href="#" class="planBlock__btn"><span>Bestellen</span></a>
+	                        <div class="planBlock__additional"><em>&euro;0,25</em> per extra gebruiker </div>
+	                    </div>
+	                    <div class="planBlock planBlock_prefered">
+	                        <div class="planBlock__title">Business</div>
+	                        <div class="planBlock__price">
+	                            <div class="priceLine">
+	                                <div class="priceLine__currency">&euro;</div>
+	                                <div class="priceLine__value">279</div>
+	                                <div class="priceLine__per">per vestiging</div>
+	                            </div>
+	                        </div>
+	                        <ul class="planBlock__features">
+	                            <li><i class="icon-checkmark"></i>Alles van Essentials</li>
+	                            <li><i class="icon-checkmark"></i>Tot 50 medewerkers</li>
+	                            <li><i class="icon-checkmark"></i>Uitgebreide rapportage</li>
+	                        </ul>
+	                        <a href="#" class="planBlock__btn"><span>Bestellen</span></a>
+	                        <div class="planBlock__additional"><em>&euro;0,10</em> per extra gebruiker </div>
+	                    </div>
+	                    <div class="planBlock">
+	                        <div class="planBlock__title">Maximiser</div>
+	                        <div class="planBlock__price">
+	                            <div class="priceLine">
+	                                <div class="priceLine__currency">&euro;</div>
+	                                <div class="priceLine__value">499</div>
+	                                <div class="priceLine__per">per vestiging</div>
+	                            </div>
+	                        </div>
+	                        <ul class="planBlock__features">
+	                            <li><i class="icon-checkmark"></i>Alles van Business</li>
+	                            <li><i class="icon-checkmark"></i>Geen limiet medewerkers</li>
+	                            <li><i class="icon-checkmark"></i>Eigen huisstijl</li>
+	                        </ul>
+	                        <a href="#" class="planBlock__btn"><span>Bestellen</span></a>
+	                    </div>
+	                </div>
+	                <div class="plansSection__subheader">Enterprise</div>
+	                <ul class="plansSection__featList">
+	                    <li><i class="icon-checkmark"></i>Alles van Enterprise</li>
+	                    <li><i class="icon-checkmark"></i>Maatwerk</li>
+	                    <li><i class="icon-checkmark"></i>Tarief o.b.v. uw wensen</li>
+	                    <li><i class="icon-checkmark"></i>Single Sign On</li>
+	                    <li><i class="icon-checkmark"></i>Eigen project team</li>
+	                    <li><i class="icon-checkmark"></i>Live support</li>
+	                </ul>
+	                <a href="" class="plansSection__phone">Contact us <span>{{ config('app.phone') }}</span></a>
+	            </div>
+	        </div>
+	        <!-- Plans Section 4 -->
+
+	        <!-- Join Section 5 -->
+	        <section id="" class="joinSection">
+	            <div class="joinSection__container">
+	                <h3 class="joinSection__header">
+	                    Meerdere retailers en horecabedrijven gingen u voor. Ervaar het gemak en vraag vandaag nog een demo aan.
+	                </h3>
+	                <form action="#">
+	                    <div class="flexRow">
+	                        <div class="column third">
+	                            <div class="formGroup underlinedWhite">
+	                                <input type="text" class="form-control">
+	                                <!-- <span class="error_message">name</span> -->
+	                                <i class="ico icon-user"></i>
+	                            </div>
+	                        </div>
+	                        <div class="column third">
+	                            <div class="formGroup underlinedWhite">
+	                                <input type="text" class="form-control">
+	                                <!-- <span class="error_message">email</span> -->
+	                                <i class="ico icon-email"></i>
+	                            </div>
+	                        </div>
+	                        <div class="column floatWidth">
+	                            <div class="formGroup underlinedWhite">
+	                                <button type="submit" class="btn btn-primary btn-rounded">Vraag een demo aan</button>
+	                            </div>
+	                        </div>
+	                        <div class="thank-you" style="display: none;">Bedankt voor uw interesse. We nemen z.s.m. contact met u op.</div>
+	                    </div>
+	                </form>
+	            </div>
+	        </section>
+	        <!-- Join Section 5 -->
+
+	        <!-- Feature Section 6 -->
+	        <section id="" class="partnersSection">
+	            <div class="slide__content">
+	                <div class="column">
+	                    <img src="img/homepage/unnamed.png" alt="">
+	                </div>
+	                <div class="column">
+	                    <img src="img/homepage/logo6.png" alt="">
+	                </div>
+	                <div class="column">
+	                    <img src="img/homepage/logo-emerce.png" alt="">
+	                </div>
+	                <div class="column">
+	                    <img src="img/homepage/bright.png" alt="">
+	                </div>
+	                <div class="column">
+	                    <img src="img/homepage/startupjuncture.png" alt="">
+	                </div>
+	                <div class="column">
+	                    <img src="img/homepage/misset_horeca_big.png" alt="">
+	                </div>
+	            </div>
+	        </section>
+	        <!-- Feature Section 6 -->
+	    </div>
+	    <!-- Content End -->
+	</div>
+
+	<!-- footer -->
+	{% include "common/bottom.html" %}
+	<!-- footer END-->
+</body>
+</html>

@@ -1,0 +1,68 @@
+#{$all-text-inputs} {
+    width: 100%;
+    padding: 6px 12px;
+    color: #fff;
+    padding-left: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    box-shadow: none !important;
+    outline: none;
+    @include appearance(none);
+    @include placeholder {color: #fff;}
+    @include transition(background 1005s ease-out 10000s);
+
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+        -webkit-text-fill-color: #fff !important;
+    }
+
+}
+
+
+#{$all-buttons} {
+    // @extend .BIGbtn;
+    // padding: 0 40px;
+}
+
+.underlined {
+    position: relative;
+
+    &:after {
+        content: '';
+        position: absolute;
+        background: #fff;
+        height: 2px;
+        width: 92px;
+        left: 50%;
+        margin-left: -46px;
+        bottom: 0;
+    }
+}
+
+.formGroup {
+    position: relative;
+
+
+    [class^="icon-"], [class*="icon-"]{
+        font-size: 25px;
+        margin-right: 0;
+        @include position(absolute, 50% 0 auto auto);
+        @include transform(translateY(-50%));
+    }
+}
+
+[class^="underlined"], [class*="underlined"]{
+    input {
+        background: none;
+        border: none;
+        border-bottom:1px solid #000;
+    }
+}
+
+.underlinedWhite {
+    input {
+        border-color: #fff;
+    }
+}

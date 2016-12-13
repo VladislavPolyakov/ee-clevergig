@@ -1,0 +1,57 @@
+.overContainer {
+    @include mobile {
+        margin: 0 -30px;
+        padding: 0 30px;
+    }
+}
+
+.leftCol {
+    background-color: #fff;
+
+    @include only-desktop {
+        margin-bottom: 55px;
+        border-radius: 80px 0 0 0;
+        padding: 0 45px 45px 50px;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12);
+        float: left;
+        width: 70%;
+        margin-right: 30px;
+    }
+
+    @include mobile {
+        width: 100%;
+    }
+
+    &__titleLine {
+        position: relative;
+
+        @include only-desktop {
+            padding-top: 35px;
+        }
+    }
+
+    &__titleAction {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        @include transform(translateY(-50%));
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+
+        .icon-plus {
+            font-size: 20px;
+            color: #3cbe9b;
+        }
+    }
+}
+
+.sideBar {
+    margin-bottom: 55px;
+
+    @include only-desktop {
+        overflow: hidden;
+        border-radius: 0 0 80px 0;
+        box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.12);
+    }
+}
