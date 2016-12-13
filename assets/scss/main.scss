@@ -1,11 +1,4 @@
-@charset "UTF-8";
 
-@import "../../node_modules/bourbon/app/assets/stylesheets/_bourbon.scss";
-@import "../../node_modules/reset-css/_reset.scss";
-
-@import "core/*";
-@import "modules/*";
-@import "pages/*";
-
-
-// @import "../../node_modules/slick-carousel/slick/slick.scss";
+body {
+    display: none;
+}

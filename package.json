@@ -4,16 +4,23 @@
   "description": "lobster Ink site",
   "main": "index.js",
   "dependencies": {
+    "autoprefixer": "^6.5.4",
     "bourbon": "^4.2.7",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "import-glob-loader": "^1.1.0",
     "owl.carousel": "^2.1.4",
-    "reset-css": "^2.2.0"
+    "path": "^0.12.7",
+    "reset-css": "^2.2.0",
+    "webpack": "^1.14.0"
   },
   "devDependencies": {
     "backstopjs": "^2.0.2",
     "breakpoint-sass": "^2.7.0",
     "browser-sync": "^2.12.3",
+    "browser-sync-webpack-plugin": "^1.1.3",
     "bs-html-injector": "^3.0.1",
     "casperjs": "^1.1.3",
+    "css-loader": "^0.26.1",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^3.1.0",
     "gulp-cache": "^0.4.4",
@@ -37,8 +44,13 @@
     "gulp-util": "^3.0.7",
     "imagesloaded": "^4.1.0",
     "isotope-layout": "^3.0.1",
+    "node-sass": "^4.0.0",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1",
     "vinyl-buffer": "^1.0.0",
-    "vinyl-source-stream": "^1.1.0"
+    "vinyl-source-stream": "^1.1.0",
+    "webpack": "^1.14.0",
+    "webpack-dev-server": "^1.16.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
