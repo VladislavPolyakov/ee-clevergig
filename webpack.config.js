@@ -12,36 +12,20 @@ module.exports = {
     },
     module: {
         loaders: [
-            // {
-            //     test: /\.css$/,
-            //     loader: "style!css"
-            // },
-            // {
-            //     test: /\.scss$/,
-            //     loader: "style!css!sass"
-            // }
-            // {
-            //     test: /\.scss$/,
-            //     loader: "css!sass"
-            // }
             {test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass')}
         ]
     },
     plugins: [
-        new ExtractTextPlugin('main.css'),
+        new ExtractTextPlugin('./css/main.css'),
         new BrowserSyncPlugin({
             host: 'localhost',
             port: 3000,
             server: { baseDir: ['./public'] }
         })
-    ]
-    // postcss: [
-    //    autoprefixer({
-    //      browsers: ['last 2 versions']
-    //    })
-    //  ],
-    //  resolve: {
-    //    extensions: ['', '.js', '.sass'],
-    //    root: [path.join(__dirname, './src')]
-    //  }
+    ],
+    postcss: [
+       autoprefixer({
+         browsers: ['last 2 versions']
+       })
+     ]
 };
