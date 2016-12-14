@@ -1,0 +1,106 @@
+
+.header {
+    @include position(fixed, 0 0 auto 0);
+    z-index: 10;
+
+    &.sticky {
+        height: 60px;
+    }
+}
+
+.notificationBar {
+    display: block;
+    text-align: center;
+    background: rgba(26,26,26,.75);
+    padding: 18px 0 16px;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    font-family: Raleway;
+    position: relative;
+    font-size: 17px;
+    font-family: Raleway;
+    font-weight: 300;
+    word-spacing: 2px;
+    letter-spacing: .1px;
+
+    &__close {
+        @include position(absolute, 0 25px 0 auto);
+        margin: auto;
+        display: block;
+        width: 19px;
+        height: 19px;
+        cursor: pointer;
+        background: url(/assets/img/icons/close_thin_grey.svg) center center no-repeat;
+    }
+}
+
+.topSection {
+    padding: 0 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+
+    .sticky & {
+        height: 60px;
+        background: #fff;
+        transition: background 0.33s, height 0.1s;
+        border-bottom: 1px solid #eee;
+    }
+
+    &__logo {
+
+        a {
+            display: block;
+        }
+
+        img {
+            width: 175px;
+            height: auto;
+
+            .sticky & {
+                width: 160px;
+            }
+        }
+    }
+
+    &__menu {
+
+        .btn {
+            font-family: "Open Sans";
+            font-size: 15px;
+            font-weight: 300;
+
+            .sticky & {
+                color: #000;
+            }
+        }
+
+        li {
+            padding:0 25px;
+        }
+
+        a {
+            color: #fff;
+
+            &:hover {
+                color: #3cbe9b;
+            }
+
+
+            .sticky & {
+                color: #999;
+
+                &:hover {
+                    color: darken(#999, 20%);
+                }
+            }
+        }
+    }
+}
+
+
+.mobileMenuIcon {
+    display: none;
+}

@@ -14,8 +14,8 @@
   ],
   "scenarios": [
     {
-      "label": "blog",
-      "url": "http://localhost:3000/blog.html",
+      "label": "homepage",
+      "url": "http://localhost:3000/index.html",
       "hideSelectors": [],
       "removeSelectors": [],
       "selectors": [

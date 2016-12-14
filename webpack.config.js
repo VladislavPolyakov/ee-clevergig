@@ -1,8 +1,6 @@
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-// var path = require('path');
-var autoprefixer = require('autoprefixer')
-
+var autoprefixer = require('autoprefixer');
 
 module.exports = {
     entry: "./assets/js/entry.js",
@@ -12,12 +10,13 @@ module.exports = {
     },
     module: {
         loaders: [
-            {test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass')},
+            {test: /\.scss$/, loader: ExtractTextPlugin.extract('css?sourceMap!sass?sourceMap')},
             // { test: /\.(jpe?g|png|gif|svg)$/i, loader: 'url?limit=10000!img?progressive=true' }
         ]
     },
+    devtool: "inline-source-map",
     plugins: [
-        new ExtractTextPlugin('./css/main.css'),
+        new ExtractTextPlugin('./css/main.css', {allChunks: true}),
         new BrowserSyncPlugin({
             host: 'localhost',
             port: 3000,

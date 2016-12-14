@@ -3,6 +3,8 @@
 @import "../../node_modules/bourbon/app/assets/stylesheets/_bourbon.scss";
 @import "../../node_modules/reset-css/_reset.scss";
 
+
+
 @import "core/helpers";
 @import "core/mixins";
 @import "core/variables";
@@ -12,4 +14,4 @@
 @import "modules/icons";
 @import "modules/layout";
 
-@import "pages/new-homepage";
+@import "pages/homepage";
