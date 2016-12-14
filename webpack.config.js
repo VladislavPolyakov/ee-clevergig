@@ -1,6 +1,6 @@
 var BrowserSyncPlugin = require('browser-sync-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
-var path = require('path');
+// var path = require('path');
 var autoprefixer = require('autoprefixer')
 
 
@@ -12,7 +12,8 @@ module.exports = {
     },
     module: {
         loaders: [
-            {test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass')}
+            {test: /\.scss$/, loader: ExtractTextPlugin.extract('css!sass')},
+            // { test: /\.(jpe?g|png|gif|svg)$/i, loader: 'url?limit=10000!img?progressive=true' }
         ]
     },
     plugins: [
@@ -20,7 +21,7 @@ module.exports = {
         new BrowserSyncPlugin({
             host: 'localhost',
             port: 3000,
-            server: { baseDir: ['./public'] }
+            server: { baseDir: ['./public'], directory: true }
         })
     ],
     postcss: [
